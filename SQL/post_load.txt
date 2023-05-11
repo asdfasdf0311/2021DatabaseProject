@@ -1,0 +1,12 @@
+﻿load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/SQL/zip_code/build_seoul.txt' into table post fields terminated by '|';
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/SQL/zip_code/build_jeonnam.txt' into table post fields terminated by '|';
+
+
+create index post_no_prim on post(post_no);
+create index sido_name_prim on post(sido_name);
+create index sigun_name_prim on post(sigun_name);
+create index road_name_prim on post(road_name);
+create index building_bon_prim on post(building_bon);
+create index building_boo_prim on post(building_boo);
+create index town_building_prim on post(town_building);
+create index row_dongname_prim on post(row_dongname);

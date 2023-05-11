@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.sql.*,java.net.*" %>
+<%
+	java.sql.Connection conn = null;
+	java.sql.Statement stmt = null;
+	java.sql.ResultSet rs = null;
+	String dburl = "jdbc:mysql://localhost:3306/testdb?useSSL=false";
+	String dbuser = "root", dbpass = "amen95";
+	try {
+	Class.forName("com.mysql.jdbc.Driver");
+	out.println("Driver Loading Ok!<br>");
+	} catch (ClassNotFoundException e ) {
+	out.println("Driver Loading Fail!<br>" + e.getMessage() + "<br>");
+	}
+	try{
+	conn = DriverManager.getConnection(dburl, dbuser, dbpass);
+	stmt = conn.createStatement();
+	out.println("DB Connection Ok!<br>");
+	} catch (SQLException e) {
+	out.println("DB Connection Fail!<br>" + e.getMessage() + "<br>");
+}
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	
+</body>
+</html>
