@@ -1,0 +1,20 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+body {
+	font-family: 'Jeju Gothic', sans-serif;
+	background-image: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	margin: 0;
+}
+
+div.print {
+	background-color: #c2e5fa;
+	text-align: center;
+	padding: 15px;
+	opacity: 0.8;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 15px;
+}

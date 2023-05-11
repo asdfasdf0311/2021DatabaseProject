@@ -1,0 +1,29 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+body {
+	font-family: 'Jeju Gothic', sans-serif;
+	
+	margin: 0;
+	
+}
+/*
+div {
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 15px;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+*/
+input {
+	width:50px;
+	height: 50px;
+} //파란색
+
+img {
+	width:50px;
+	height: 50px;
+} // 회색
